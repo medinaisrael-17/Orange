@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orange</title>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -17,6 +21,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <!-- Scroll Magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
 
     <!-- Style -->
     <link rel="stylesheet" href="./assets/style.css" />
@@ -57,13 +67,45 @@
         <div class="row">
             <div class="col s12">
                 <h1>Orange</h1>
-                <div class="divider"></div>
+                <div class="divider" id="poemTrigger"></div>
             </div>
             <div class="col s12">
                 <p id="definition">
                     "a globose berry with a yellowish to reddish-orange rind and a sweet edible pulp"
                 </p>
-                <p><em>-Merriam-Webster</em></p>
+                <p><em>-Merriam-Webster Definition</em></p>
+            </div>
+            <div class="col s12">
+                <div id="poem">
+                    <div class="row">
+                        <div class="col s2"></div>
+                        <div class="col s8">
+                            <p>
+                                <em>
+                                    "'Orange doesn’t rhyme.'<br>
+                                    Well, that’s what we were taught.<br>
+                                    So, what it really needs is<br>
+                                    Some careful new thought.<br>
+                                    <br>
+                                    So, just for a moment<br>
+                                    Let’s get a bit strange;<br>
+                                    Let’s take the word ‘orange’<br>
+                                    And let us deftly rearrange.<br>
+                                    It can become something<br>
+                                    Like ‘no rage’ instead.<br>
+                                    Doesn’t that fit much more<br>
+                                    Comfortably inside the head<br>
+                                    And inside your rhyme scheme<br>
+                                    As you gleefully poeticize<br>
+                                    And smoothly abandon<br>
+                                    The conundrum of other guys?..."
+                                </em>
+                                <p style="font-size: 18px;">Kincaid, Brent. "RHYMING ORANGE". 2016. <em>Words - Orange</em>, hellopoetry.com/words/orange/.</p>
+                            </p>
+                        </div>
+                        <div class="col s2"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

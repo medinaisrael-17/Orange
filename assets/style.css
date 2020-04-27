@@ -90,6 +90,17 @@ body {
     font-size: 1.5em;
 }
 
+#poem {
+    font-size: 2em;
+    text-align: center;
+}
+
+#poem p:nth-child(1) {
+    opacity: 0;
+    border: 1px solid orange;
+    padding: 20px;
+}
+
 
 
 
