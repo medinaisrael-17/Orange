@@ -16,7 +16,7 @@ body {
     margin: auto;
     width: 60%;
     position: absolute;
-    left: 22%;
+    left: 28%;
     z-index: 2;
 }
 
@@ -76,9 +76,12 @@ body {
     100% {right: 0;}
 }
 
+
+/* Section 1 */
+
 #section-1 {
-    height: 500px;
     padding: 25px;
+    margin-bottom: 50px;
 }
 
 #section-1 h1 {
@@ -101,9 +104,126 @@ body {
     padding: 20px;
 }
 
+/* Section 2  */
 
+#section-2 {
+    z-index: 1;
+    position: relative;
+    height: 900px;
+    background-color: #fc6724;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    padding: 20px;
+}
 
+#section-2 .col:nth-child(1) {
+    margin-top: 60px;
+}
 
+#text-box-2 {
+    position: relative;
+    overflow: hidden;
+    height: 10em;
+    width: 50em;
+}
+
+#text-box-2 h1 {
+    color: white;
+    position: absolute;
+    top: 2em;
+}
+
+#text-box-2 em {
+    font-family: 'Modak', cursive;
+}
+
+#stonehenge {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    transform: rotate(10deg);
+}
+
+#vans {
+    position: absolute;
+    bottom: 8%;
+    left: -1%;
+    transform: rotate(183deg);
+    width: 29em;
+}
+
+/* Section 3 */
+
+#section-3 {
+    position: relative;
+    height: 700px;
+}
+
+#album-box {
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 19%;
+    width: 73%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album {
+    margin: 1%;
+    width: 15em;
+    height: 15em;
+    
+}
+
+.box {
+    border: 2px solid #ff8248;
+    position: absolute;
+    background-image: url("./images/orange-makeup.jpg");
+    width: 3em;
+}
+
+#box-1 {
+    height: 8.18em;
+    top: 13em;
+    left: 4em;
+    background-position-x: 0em;
+    background-position-y: -9em;
+    background-size: 20em;
+}
+
+#box-2 {
+    height: 16.36em;
+    top: 9em;
+    left: 8em;
+    background-position-x: -5em;
+    background-position-y: -3.7em;
+    background-size: 20em;
+}
+#box-3 {
+    height: 24.55em;
+    top: 5em;
+    left: 12em;
+    background-position-x: -8em;
+    background-size: 20em;
+    
+}
+
+#box-4 {
+    height: 16.36em;
+    top: 9em;
+    left: 16em;
+    background-position-x: -12em;
+    background-position-y: -4em;
+    background-size: 20em;
+}
+
+#box-5 {
+    height: 8.18em;
+    top: 13em;
+    left: 20em;
+    background-position-x: -12em;
+    background-position-y: -14em;
+    background-size: 20em;
+}
 
 
 
