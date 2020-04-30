@@ -22,11 +22,35 @@ const creativityScene = new ScrollMagic.Scene({
     .setTween(creativityTween)
     .addTo(controller);
 
-const albumScene = new ScrollMagic.Scene({
+const albumBoxTween = new TweenMax.to("#album-box", 1, {
+    display: "block"
+})
+
+const albumsScene = new ScrollMagic.Scene({
     triggerElement: "#section-3",
-    duration: 50,
     reverse: false
 })
-    .setClassToggle(".album", "bounceIn")
-    .addIndicators()
+    .setClassToggle(".album", "zoomIn")
+    .setTween(albumBoxTween)
     .addTo(controller); 
+
+const neonCaptionTween = new TweenMax.to("b", .2, {
+    color: "#fee",
+    textShadow: `0 -40px 100px, 0 0 2px, 0 0 1em #ff7b00, 0 0 0.5em #ff7b00, 0 0 0.1em #ff7b00, 0 10px 3px #000`
+})
+
+
+const neonScene1 = new ScrollMagic.Scene({
+    triggerElement: "#section-caption",
+    reverse: true
+})
+    .setClassToggle("#span-1", "with-animation-1")
+    .setTween(neonCaptionTween)
+    .addTo(controller)
+
+const neonScene2 = new ScrollMagic.Scene({
+    triggerElement: "#section-caption",
+    reverse: true
+})
+    .setClassToggle("#span-2", "with-animation-2")
+    .addTo(controller)
